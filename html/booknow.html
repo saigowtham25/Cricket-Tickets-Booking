@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+   
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-details h2, .offers h2, .payment-options h2 {
+    background-color: #f85a5a;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 4px 4px 0 0;
+}
+
+.contact-details input[type="email"], .contact-details input[type="tel"] {
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-details button {
+    padding: 10px 20px;
+    background-color: #f85a5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.payment-options .options {
+    display: flex;
+}
+
+.payment-options ul {
+    list-style: none;
+    padding: 0;
+    width: 30%;
+}
+
+.payment-options ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.payment-options ul li.active {
+    background-color: #f85a5a;
+    color: white;
+    font-weight: bold;
+}
+
+.card-details {
+    width: 70%;
+    padding: 20px;
+}
+
+.card-details h3 {
+    margin-top: 0;
+}
+
+.card-details input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.card-info input {
+    width: calc(33% - 10px);
+    padding: 10px;
+    margin: 5px 5px 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f85a5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+  </style>
+    <div class="container">
+        <div class="section contact-details">
+            <h2>Share your Contact Details</h2>
+            <input type="email" placeholder="Enter email">
+            <input type="tel" placeholder="+91">
+            <button>Continue</button>
+        </div>
+        
+        <div class="section payment-options">
+            <h2>Payment options</h2>
+            <div class="options">
+                <ul>
+                    <li class="active">Debit/Credit Card</li>
+                    <li>UPI</li>
+                </ul>
+                
+                <div class="card-details">
+                    <h3>Enter your Card details</h3>
+                    <input type="text" placeholder="Card Number">
+                    <input type="text" placeholder="Name on the card">
+                    <div class="card-info">
+                        <input type="text" placeholder="MM" maxlength="2">
+                        <input type="text" placeholder="YY" maxlength="2">
+                        <input type="text" placeholder="CVV" maxlength="3">
+                    </div>
+                    <button class="pay-button">Make Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
